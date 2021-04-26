@@ -8,17 +8,17 @@ namespace GuyHarwood.TravellingSalesman
 		static void Main(string[] args)
 		{
 			//a queue for the locations that will be used to establish all available roads (a complete graph)
-			var locQ = new Queue<Location>(5);
+			var locQ = new Queue<Location>(4);
 
 			//create the locations(vertexes), and queue them ...
-			locQ.Enqueue(new Location("Derby", 52.9230, -1.480));
-			locQ.Enqueue(new Location("Nottingham", 52.9546, -1.163));
-			locQ.Enqueue(new Location("Manchester", 53.4750, -2.252));
-			locQ.Enqueue(new Location("Sheffield", 53.378, -1.468));
-			locQ.Enqueue(new Location("Reading", 51.444, -0.989));
+
+			locQ.Enqueue(new Location("Kokkola", 63.83849, 23.13048));
+			locQ.Enqueue(new Location("Pietarsaari", 63.67424, 22.71257));
+			locQ.Enqueue(new Location("Vaasa", 63.09514, 21.61651));
+			locQ.Enqueue(new Location("Oulu", 65.01209, 25.46508));
 
 			//create an array to reference all locations as we establish roads
-			var locs = new Location[5];
+			var locs = new Location[4];
 			locQ.CopyTo(locs, 0);
 
 			//to store the roads we need to look up
