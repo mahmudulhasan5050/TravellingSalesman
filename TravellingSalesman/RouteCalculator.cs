@@ -33,7 +33,7 @@ namespace GuyHarwood.TravellingSalesman
 			var route = new Queue<Location>(_destinations.Count);
 			//enumerate each destination and find closest...
 
-			throw new NotImplementedException();
+			//throw new NotImplementedException();
 
 			return route;
 		}
